@@ -1,0 +1,102 @@
+Определить имя папки, в которой вы находитесь
+pwd
+Создать внутри этой папки каталог с именем test1
+mkdir test1
+Перейти в папку test1
+cd test1
+Создать файл 1,2 и 3 внутри каталога test1
+touch 1.txt 2.txt 3.txt
+Проверить содержимое каталога test1
+ls
+Перейти в домашнюю директорию
+cd
+Создать папку test2 внутри домашней директории
+mkdir test2
+Удалить папку test2
+rmdir test2
+Удалить файл 2 из папки test1
+cd test1
+rm 2.txt
+Создать папку в домашней директории test3 и добавить в нее два файла
+cd
+mkdir test3
+cd test3
+touch 1.txt 2.txt
+Удалить папку test3
+cd
+rm -rf test3
+Создать папку test4 в домашней директории
+mkdir test4
+Переместить файлы 1 и 3 из папки test1 в папку test4
+mv test1/1.txt test4
+mv test1/3.txt test4
+Добавить в файл 1 три строки со словами line
+cd test4
+cat <<EOF >> 1.txt
+Line
+Line
+Line
+EOF
+Посмотреть содержимое файла 1
+cat 1.txt
+Добавьте в файл 3 три строки со словами line
+cat <<EOF >> 3.txt
+Line
+Line
+Line
+EOF
+Просмотрите содержимое двух файлов (1 и 3) сразу
+cat 1.txt 3.txt
+Используя один из редакторов замените все строки в файле 1
+nano 1.txt
+
+Last login: Thu Oct 10 07:30:18 on ttys007
+ulaburlaka@MacBook-Air-Ula ~ % pwd
+/Users/ulaburlaka
+ulaburlaka@MacBook-Air-Ula ~ % mkdir test1
+ulaburlaka@MacBook-Air-Ula ~ % cd test1
+ulaburlaka@MacBook-Air-Ula test1 % touch 1.txt 2.txt 3.txt
+ulaburlaka@MacBook-Air-Ula test1 % ls
+1.txt	2.txt	3.txt
+ulaburlaka@MacBook-Air-Ula test1 % cd
+ulaburlaka@MacBook-Air-Ula ~ % mkdir test2
+ulaburlaka@MacBook-Air-Ula ~ % rmdir test2
+ulaburlaka@MacBook-Air-Ula ~ % cd test1
+ulaburlaka@MacBook-Air-Ula test1 % rm 2.txt
+ulaburlaka@MacBook-Air-Ula test1 % cd
+ulaburlaka@MacBook-Air-Ula ~ % mkdir test3
+ulaburlaka@MacBook-Air-Ula ~ % cd test3
+ulaburlaka@MacBook-Air-Ula test3 % touch 1.txt 2.txt
+ulaburlaka@MacBook-Air-Ula test3 % cd
+ulaburlaka@MacBook-Air-Ula ~ % rm -rf test3
+ulaburlaka@MacBook-Air-Ula ~ % mkdir test4
+ulaburlaka@MacBook-Air-Ula ~ % mv test1/1.txt test4
+mv test1/3.txt test4
+ulaburlaka@MacBook-Air-Ula ~ % cd test4
+ulaburlaka@MacBook-Air-Ula test4 % cat <<EOF >> 1.txt
+Line
+Line
+Line
+EOF
+ulaburlaka@MacBook-Air-Ula test4 % cat 1.txt
+Line
+Line
+Line
+ulaburlaka@MacBook-Air-Ula test4 % cat <<EOF >> 3.txt
+Line
+Line
+Line
+EOF
+ulaburlaka@MacBook-Air-Ula test4 % cat 1.txt 3.txt
+Line
+Line
+Line
+Line
+Line
+Line
+ulaburlaka@MacBook-Air-Ula test4 % nano 1.txt
+ulaburlaka@MacBook-Air-Ula test4 % cat 1.txt
+Hello
+Hello
+Hello
+ulaburlaka@MacBook-Air-Ula test4 % 
