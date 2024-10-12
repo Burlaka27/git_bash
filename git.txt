@@ -1,0 +1,8 @@
+
+git init Burlaka27                                          # Создать свой репозиторий c таким же именем, как и имя пользователя в github 
+git clone github.com:Burlaka27/Burlaka27                    # Склонировать его на свой компьютер в отдельную папку
+git clone github.com:testrusau/testrusau                    # Склонировать себе следующий репозиторий в отдельную папку https://github.com/testrusau/testrusau
+cd /Users/ulaburlaka/testrusau                              # Запушьте данные из репозитория testrusau в ваш репозиторий
+git push git@github.com:Burlaka27/testrusau.git main:main
+git commit -m "commit massage"                              # Открыть файл README.md и поочередно заменить каждый блок на вашу информацию
+git push 
